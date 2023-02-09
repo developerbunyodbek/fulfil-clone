@@ -1,0 +1,291 @@
+/* ROOT */
+:root {
+  --text-color: #000;
+  --primary-color: #3cb27f;
+  --title-color: #193c3f;
+  --checked-background-color: #e9fff5;
+  --footer-background-color: #1d4245;
+  --white-color: #fff;
+  --background-color: #f8fffc;
+  --btn-background-color: #09a964;
+  --info-color: #55645e;
+  --font-family: "Poppins", Arial, sans-serif, serif;
+}
+
+/* GLOBAL */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  border: 0;
+  color: var(--white-color);
+  background-color: var(--btn-background-color);
+  border-radius: 4px;
+  padding: 14px 74px 14px 57px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.1s ease;
+}
+
+.button:hover {
+  background-color: #098d54;
+  border: 1.4px solid var(--btn-color);
+}
+
+.button:active {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MAIN */
+.main-content {
+  flex-grow: 1;
+}
+
+/* HEADER */
+.header {
+  padding: 25px 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 52px;
+}
+
+.header-logo-image {
+  width: 97px;
+  height: 60px;
+  display: block;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--btn-background-color);
+}
+
+.nav-link-image {
+  margin-left: 14px;
+  width: 12px;
+  height: 7px;
+}
+
+.header-phone {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-phone-image {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.header-number {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--title-color);
+}
+
+/* HERO */
+.hero {
+  padding: 35px 0;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-welcome {
+  margin: 0 0 30px;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #10985d;
+}
+
+.hero-title {
+  margin: 0 0 58px;
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--title-color);
+}
+
+.hero-active {
+  color: var(--primary-color);
+  position: relative;
+}
+
+.hero-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 98%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--primary-color);
+  transform: rotate(1deg);
+}
+
+.hero-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 98%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--primary-color);
+  transform: rotate(1deg);
+}
+
+.hero-decription {
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--info-color);
+  width: 455px;
+}
+
+.hero-about {
+  display: flex;
+  margin-top: 60px;
+}
+
+.hero-about-box:not(:last-child) {
+  margin-right: 30px;
+}
+
+.hero-about-box {
+  padding: 20px 25px;
+  background-color: var(--white-color);
+  box-shadow: 0 6px 12px #00000014;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hero-number {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0;
+}
+
+.hero-plus {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--primary-color);
+}
+.hero-box-info {
+  margin: 12px 0 0;
+  font-size: 16px;
+}
+
+.hero-img {
+  width: 500px;
+  height: 500px;
+}
+
+/* USEFUL */
+.useful {
+  padding: 80px 0 40px;
+}
+
+.useful-texts {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.useful-title {
+  font-weight: 700;
+  font-size: 26px;
+  margin: 0;
+  line-height: 130%;
+}
+
+.useful-active {
+  color: var(--primary-color);
+}
+
+.useful-image {
+  width: 40px;
+  height: 40px;
+  margin-top: 40px;
+}
