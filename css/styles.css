@@ -790,3 +790,56 @@ img {
     font-size: 16px;
   }
 }
+
+@media (max-width: 380px) {
+  .container {
+    width: 300px;
+  }
+  iframe {
+    width: 300px;
+  }
+  .header-phone-image {
+    display: none;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+  .hero-about-box:nth-child(2) {
+    margin-top: 30px;
+  }
+  .useful-title {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 340px) {
+  .container {
+    width: 280px;
+  }
+  .header-logo-image {
+    width: 80px;
+  }
+  .hero-title {
+    font-size: 35px;
+  }
+  iframe {
+    width: 280px;
+  }
+  .useful-image {
+    margin-top: 0;
+  }
+  .about-checked-info {
+    font-size: 16px;
+  }
+  .about-title {
+    font-size: 30px;
+  }
+  .footer-contact-phone-number {
+    font-size: 20px;
+  }
+  .footer-contact-info {
+    font-size: 16px;
+  }
+}
